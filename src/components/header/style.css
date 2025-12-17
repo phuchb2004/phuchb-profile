@@ -1,0 +1,19 @@
+.header-container {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #000000;
+    padding: 30px;
+}

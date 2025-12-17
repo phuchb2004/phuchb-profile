@@ -1,0 +1,56 @@
+.footer-container {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Address */
+.address-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.address-title {
+
+}
+
+.address-section p {
+    margin: 0;
+}
+
+/* Connect */
+.connect-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-title {
+
+}
+
+.socials a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Contact */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+
+}
+
+.contact-section ul {
+    list-style: none;
+    margin: 0;
+}
