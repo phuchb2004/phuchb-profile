@@ -7,6 +7,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Experience from './pages/experience';
 import Education from './pages/education';
+import './i18n';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

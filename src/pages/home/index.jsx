@@ -1,16 +1,25 @@
 import './style.css';
 import phucImg from '../../assets/sen.png';
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function Home() {
+    const { t } = useTranslation();
 
     return (
         <div className="home-container">
             <div className="home-left">
-                <h1>Xin chào, tôi là Bảo Phúc</h1>
-                <p>Một Full-stack Developer đam mê tạo ra những giao diện hiện đại bằng <strong>React, Next.js, Vue.js</strong> và xây dựng hệ thống ổn định với <strong>Node.js, Express, Nest.js</strong></p>
+                <h1>{t('home.left.greeting')}</h1>
+                <p>
+                    <Trans
+                        i18nKey="home.left.description"
+                        components={{
+                            0: <strong className="highlight-text" />,
+                        }}
+                    />
+                </p>
                 <div className="buttons">
-                    <button className="button-contact">Liên hệ tôi</button>
-                    <button className="button-cv">Tải xuống CV</button>
+                    <button className="button-contact">{t('home.left.contactButton')}</button>
+                    <button className="button-cv">{t('home.left.downloadCVButton')}</button>
                 </div>
             </div>
 

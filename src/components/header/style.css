@@ -22,3 +22,31 @@
     color: #000000;
     padding: 30px;
 }
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.lang-switch span {
+    cursor: pointer;
+    color: #999;
+}
+
+.lang-switch span:hover {
+    color: #8594e4;
+}
+
+.lang-switch .separator {
+    cursor: default;
+    color: #ddd;
+}
+
+.active-lang {
+    color: #8594e4;
+    font-weight: 800;
+    border-bottom: 2px solid #8594e4;
+}

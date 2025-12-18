@@ -1,0 +1,37 @@
+{
+    "header": {
+        "title": "Hoang Bao Phuc",
+        "menu": {
+            "home": "Home",
+            "about": "About",
+            "experience": "Experience",
+            "education": "Education",
+            "languages": {
+                "en": "EN",
+                "vi": "VI"
+            }
+        }
+    },
+    "footer": {
+        "address": {
+            "title": "Address",
+            "line1": "9 Pham Van Dong, Phu Dien, Hanoi"
+        },
+        "socials": {
+            "title": "Socials"
+        },
+        "contact": {
+            "title": "Contact",
+            "phone": "Phone: +84 355318104",
+            "email": "Email: phuchb04@gmail.com"
+        }
+    },
+    "home": {
+        "left": {
+            "greeting": "Hello, I'm Bao Phuc",
+            "description": "A Full-stack Developer passionate about creating modern interfaces with <0>React, Next.js, Vue.js</0> and building robust systems using <0>Node.js, Express, Nest.js</0>",
+            "contactButton": "Contact Me",
+            "downloadCVButton": "Download CV"
+        }
+    }
+}

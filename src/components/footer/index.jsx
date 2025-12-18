@@ -1,20 +1,22 @@
 import './style.css';
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined, TwitchOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+    const { t } = useTranslation();
 
     return (
         <div className="footer-container">
             <div className="address-section">
                 <div className="address-title">
-                    <h3>Địa chỉ</h3>
+                    <h3>{t('footer.address.title')}</h3>
                 </div>
-                <p>9 Phạm Văn Đồng, Phú Diễn, Hà Nội</p>
+                <p>{t('footer.address.line1')}</p>
             </div>
 
             <div className="connect-section">
                 <div className="connect-title">
-                    <h3>Kết nối</h3>
+                    <h3>{t('footer.socials.title')}</h3>
                 </div>
                 <div className="socials">
                     <a href="https://www.facebook.com/phuc.hoangbao.908">
@@ -34,11 +36,11 @@ export default function Footer() {
 
             <div className="contact-section">
                 <div className="contact-title">
-                    <h3>Liên hệ</h3>
+                    <h3>{t('footer.contact.title')}</h3>
                 </div>
                 <ul>
-                    <li>Tel: +84 355318104</li>
-                    <li>Email: phuchb04@gmail.com</li>
+                    <li>{t('footer.contact.phone')}</li>
+                    <li>{t('footer.contact.email')}</li>
                 </ul>
             </div>
         </div>

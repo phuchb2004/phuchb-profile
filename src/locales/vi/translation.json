@@ -1,0 +1,37 @@
+{
+    "header": {
+        "title": "Hoàng Bảo Phúc",
+        "menu": {
+            "home": "Trang chủ",
+            "about": "Giới thiệu",
+            "experience": "Kinh nghiệm",
+            "education": "Học vấn",
+            "languages": {
+                "en": "EN",
+                "vi": "VI"
+            }
+        }
+    },
+    "footer": {
+        "address": {
+            "title": "Địa chỉ",
+            "line1": "9 Phạm Văn Đồng, Phú Diễn, Hà Nội"
+        },
+        "socials": {
+            "title": "Mạng xã hội"
+        },
+        "contact": {
+            "title": "Liên hệ",
+            "phone": "Số điện thoại: +84 355318104",
+            "email": "Email: phuchb04@gmail.com"
+        }
+    },
+    "home": {
+        "left": {
+            "greeting": "Xin chào, tôi là Bảo Phúc",
+            "description": "Một Full-stack Developer đam mê tạo ra những giao diện hiện đại bằng <0>React, Next.js, Vue.js</0> và xây dựng hệ thống ổn định với <0>Node.js, Express, Nest.js</0>",
+            "contactButton": "Liên hệ tôi",
+            "downloadCVButton": "Tải xuống CV"
+        }
+    }
+}
