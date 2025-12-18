@@ -5,7 +5,9 @@ export default function Header() {
     return (
         <div className="header-container">
             <div className="header-title">
-                <h1>Hoàng Bảo Phúc</h1>
+                <NavLink to="/home">
+                    <h1>Hoàng Bảo Phúc</h1>
+                </NavLink>
             </div>
             <nav className="header-menu">
                 <NavLink to="/home" className={({isActive}) => isActive ? 'active-menu' : 'inactive-menu'}>Home</NavLink>

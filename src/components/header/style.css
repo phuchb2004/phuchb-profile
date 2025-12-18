@@ -2,8 +2,13 @@
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-title a {
+    color: #000000;
+    text-decoration: none;
 }
 
 .header-menu {
