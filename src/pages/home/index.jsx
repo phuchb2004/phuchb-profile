@@ -5,6 +5,15 @@ import { useTranslation, Trans } from 'react-i18next';
 export default function Home() {
     const { t } = useTranslation();
 
+    const handleDownloadCV = () => {
+        const link = document.createElement('a');
+        link.href = '/cv/baophuc-2025.pdf';
+        link.download = 'HoangBaoPhuc_CV_2025.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
         <div className="home-container">
             <div className="home-left">
@@ -24,8 +33,15 @@ export default function Home() {
                 </div>
 
                 <div className="buttons animate-fade-up delay-2">
-                    <button className="button-contact">{t('home.left.contactButton')}</button>
-                    <button className="button-cv">{t('home.left.downloadCVButton')}</button>
+                    <button className="button-contact">
+                        {t('home.left.contactButton')}
+                    </button>
+                    <button 
+                        className="button-cv"
+                        onClick={handleDownloadCV}
+                    >
+                        {t('home.left.downloadCVButton')}
+                    </button>
                 </div>
             </div>
 
