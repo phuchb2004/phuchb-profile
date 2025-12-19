@@ -49,5 +49,25 @@
                 "mysql": "MySQL"
             }
         }
+    },
+    "modal": {
+        "contactEmail": {
+            "title": "Liên hệ",
+            "description": "Hãy để lại lời nhắn, tôi sẽ phản hồi sớm nhất có thể",
+            "label": {
+                "name": "Tên của bạn",
+                "email": "Email",
+                "message": "Lời nhắn"
+            },
+            "placeholder": {
+                "name": "Nguyễn Văn Mười",
+                "email": "example@gmail.com",
+                "message": "Nội dung lời nhắn..."
+            },
+            "message": {
+                "success": "Gửi thành công, cảm ơn bạn!",
+                "error": "Đã xảy ra lỗi, vui lòng thử lại!"
+            }
+        }
     }
 }

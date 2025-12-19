@@ -49,5 +49,25 @@
                 "mysql": "MySQL"
             }
         }
+    },
+    "modal": {
+        "contactEmail": {
+            "title": "Contact Me",
+            "description": "Please leave a message, I will respond as soon as possible.",
+            "label": {
+                "name": "Your Name",
+                "email": "Email",
+                "message": "Message"
+            },
+            "placeholder": {
+                "name": "John Doe",
+                "email": "example@gmail.com",
+                "message": "Type your message here..."
+            },
+            "message": {
+                "success": "Message sent successfully! Thank you.",
+                "error": "An error occurred. Please try again."
+            }
+        }
     }
 }

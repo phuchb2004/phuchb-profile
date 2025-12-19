@@ -1,9 +1,12 @@
+import React, { useState } from 'react';
 import './style.css';
 import phucImg from '../../assets/sen.png';
 import { useTranslation, Trans } from 'react-i18next';
+import ContactEmail from '../../components/modals/contact-email';
 
 export default function Home() {
     const { t } = useTranslation();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleDownloadCV = () => {
         const link = document.createElement('a');
@@ -33,7 +36,7 @@ export default function Home() {
                 </div>
 
                 <div className="buttons animate-fade-up delay-2">
-                    <button className="button-contact">
+                    <button className="button-contact" onClick={() => setIsModalOpen(true)}>
                         {t('home.left.contactButton')}
                     </button>
                     <button 
@@ -52,6 +55,11 @@ export default function Home() {
                     className="animate-fade-in delay-3"
                 />
             </div>
+
+            <ContactEmail
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+            />
         </div>
     )
 }
