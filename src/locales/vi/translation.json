@@ -33,5 +33,21 @@
             "contactButton": "Liên hệ tôi",
             "downloadCVButton": "Tải xuống CV"
         }
+    },
+    "about": {
+        "right": {
+            "title": "Giới thiệu bản thân",
+            "description": "Tôi là một lập trình viên có niềm đam mê với công nghệ, sở hữu kinh nghiệm làm việc với React, Nextjs, Vuejs, Nodejs, Laravel, .NET và các công nghệ cơ sở dữ liệu.",
+            "tech": {
+                "head": "Các công nghệ sử dụng",
+                "react": "ReactJS",
+                "next": "NextJS",
+                "vue": "VueJS",
+                "node": "NodeJS",
+                "laravel": "Laravel",
+                "dotnet": ".NET",
+                "mysql": "MySQL"
+            }
+        }
     }
 }

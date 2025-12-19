@@ -33,5 +33,21 @@
             "contactButton": "Contact Me",
             "downloadCVButton": "Download CV"
         }
+    },
+    "about": {
+        "right": {
+            "title": "About Me",
+            "description": "I'm a passionate software developer with hands-on experience in React, Nextjs, Vuejs, Nodejs, Laravel, .NET, and database technologies.",
+            "tech": {
+                "head": "Technologies",
+                "react": "ReactJS",
+                "next": "NextJS",
+                "vue": "VueJS",
+                "node": "NodeJS",
+                "laravel": "Laravel",
+                "dotnet": ".NET",
+                "mysql": "MySQL"
+            }
+        }
     }
 }
