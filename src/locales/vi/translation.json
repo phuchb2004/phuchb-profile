@@ -64,6 +64,10 @@
                 "email": "example@gmail.com",
                 "message": "Nội dung lời nhắn..."
             },
+            "button": {
+                "send": "Gửi tin nhắn",
+                "sending": "Đang gửi..."
+            },
             "message": {
                 "success": "Gửi thành công, cảm ơn bạn!",
                 "error": "Đã xảy ra lỗi, vui lòng thử lại!"

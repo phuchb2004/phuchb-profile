@@ -64,6 +64,10 @@
                 "email": "example@gmail.com",
                 "message": "Type your message here..."
             },
+            "button": {
+                "send": "Send message",
+                "sending": "Sending..."
+            },
             "message": {
                 "success": "Message sent successfully! Thank you.",
                 "error": "An error occurred. Please try again."

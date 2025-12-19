@@ -50,41 +50,41 @@ const ContactEmail = ({ isOpen, onClose }) => {
                     <FaTimes/>
                 </button>
 
-                <h2> </h2>
-                <p>Hãy để lại lời nhắn, tôi sẽ phản hồi sớm nhất có thể</p>
+                <h2>{t('modal.contactEmail.title')}</h2>
+                <p>{t('modal.contactEmail.description')}</p>
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label>Tên của bạn</label>
+                        <label>{t('modal.contactEmail.label.name')}</label>
                         <input 
                             type="text"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
                             required
-                            placeholder="Nguyễn Văn Mười"    
+                            placeholder={t('modal.contactEmail.placeholder.name')}   
                         />
                     </div>
                     <div className="form-group">
-                        <label>Email</label>
+                        <label>{t('modal.contactEmail.label.email')}</label>
                         <input 
                             type="email"
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            placeholder="example@gmail.com"    
+                            placeholder={t('modal.contactEmail.placeholder.email')}      
                         />
                     </div>
                     <div className="form-group">
-                        <label>Lời nhắn</label>
+                        <label>{t('modal.contactEmail.label.message')}</label>
                         <textarea 
                             name="message"
                             rows="4"
                             value={formData.message}
                             onChange={handleChange}
                             required
-                            placeholder="Nội dung lời nhắn..."
+                            placeholder={t('modal.contactEmail.placeholder.message')}   
                         />
                     </div>
 
@@ -93,11 +93,11 @@ const ContactEmail = ({ isOpen, onClose }) => {
                         className="submit-btn"
                         disabled={ status === 'sending' }    
                     >
-                        { status === 'sending' ? 'Đang gửi...' : 'Gửi tin nhắn' }
+                        { status === 'sending' ? t('modal.contactEmail.button.sending') : t('modal.contactEmail.button.send') }
                     </button>
 
-                    { status === 'success' && <p className="msg-success">Gửi thành công, cảm ơn bạn!</p> }
-                    { status === 'error' && <p className="msg-error">Đã xảy ra lỗi, vui lòng thử lại!</p> }
+                    { status === 'success' && <p className="msg-success">{t('modal.contactEmail.message.success')}</p> }
+                    { status === 'error' && <p className="msg-error">{t('modal.contactEmail.message.error')}</p> }
                 </form>
             </div>
         </div>
