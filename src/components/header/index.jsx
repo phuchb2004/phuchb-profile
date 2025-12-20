@@ -37,7 +37,7 @@ export default function Header() {
 
             <nav className={`header-menu ${isMenuOpen ? 'active' : ''}`}>
                 <NavLink 
-                    to="/home" 
+                    to="/" 
                     className={({ isActive }) => isActive ? 'active-menu' : 'inactive-menu'}
                     onClick={closeMenu}
                 >

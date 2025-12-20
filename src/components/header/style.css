@@ -41,7 +41,7 @@
     align-items: center;
 }
 
-.header-menu a:hover, .header-menu a.active {
+.header-menu a:hover, .header-menu a.active-menu {
     color: #8594e4;
 }
 
