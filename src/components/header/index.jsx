@@ -1,27 +1,69 @@
+import React, { useState } from 'react';
 import './style.css';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../../assets/sen.png';
 
 export default function Header() {
     const { t, i18n } = useTranslation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
+        setIsMenuOpen(true);
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
     };
 
     return (
         <div className="header-container">
             <div className="header-title">
                 <NavLink to="/home">
-                    <h1>{t('header.title')}</h1>
+                    <h1 className="desktop-title">{t('header.title')}</h1>
+                    <img src={logo} alt="Logo" className="mobile-logo" />
                 </NavLink>
             </div>
 
-            <nav className="header-menu">
-                <NavLink to="/home" className={({isActive}) => isActive ? 'active-menu' : 'inactive-menu'}>{t('header.menu.home')}</NavLink>
-                <NavLink to="/about">{t('header.menu.about')}</NavLink>
-                <NavLink to="/experience">{t('header.menu.experience')}</NavLink>
-                <NavLink to="/education">{t('header.menu.education')}</NavLink>
+            <div className="mobile-menu-icon" onClick={toggleMenu}>
+                {isMenuOpen ? <FaTimes/> : <FaBars/>}
+            </div>
+
+            <nav className={`header-menu ${isMenuOpen ? 'active' : ''}`}>
+                <NavLink 
+                    to="/home" 
+                    className={({ isActive }) => isActive ? 'active-menu' : 'inactive-menu'}
+                    onClick={closeMenu}
+                >
+                    {t('header.menu.home')}
+                </NavLink>
+                <NavLink 
+                    to="/about"
+                    className={({ isActive }) => isActive ? 'active-menu' : 'inactive-menu'}
+                    onClick={closeMenu}
+                >
+                    {t('header.menu.about')}
+                </NavLink>
+                <NavLink 
+                    to="/experience"
+                    className={({ isActive }) => isActive ? 'active-menu' : 'inactive-menu'}
+                    onClick={closeMenu}
+                >
+                    {t('header.menu.experience')}
+                </NavLink>
+                <NavLink 
+                    to="/education"
+                    className={({ isActive }) => isActive ? 'active-menu' : 'inactive-menu'}
+                    onClick={closeMenu}
+                >
+                    {t('header.menu.education')}
+                </NavLink>
 
                 <div className="lang-switch">
                     <span
@@ -39,8 +81,6 @@ export default function Header() {
                     </span>
                 </div>
             </nav>
-
-
         </div>
     )
 }
