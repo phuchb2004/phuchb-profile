@@ -4,6 +4,12 @@ import React from 'react';
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { SiNextdotjs, SiVuedotjs, SiLaravel, SiDotnet } from 'react-icons/si';
 import phucImg from '../../assets/sen.png';
+import bu2fc from '../../assets/sport/bu2fc.jpg';
+import start from '../../assets/sport/start.jpg';
+import withFamily from '../../assets/sport/with-family.jpg';
+import pth from '../../assets/sport/pth.jpg';
+import goal from '../../assets/sport/goal.mp4';
+import RevealOnScroll from '../../components/reveal-on-scroll';
 
 export default function About() {
     const { t } = useTranslation();
@@ -11,68 +17,88 @@ export default function About() {
     return (
         <div className="about-container">
             {/* General */}
-            <div className="about-general">
-                <div className="about-left">
-                    <div className="about-img-wrapper animate-fade-left">
-                        <img src={phucImg} alt="About Phuc" />
+            <RevealOnScroll direction="right">
+                <div className="about-general">
+                    <div className="about-left">
+                        <div className="about-img-wrapper">
+                            <img src={phucImg} alt="About Phuc" />
 
-                        <div className="social-links animate-fade-left delay-2">
-                            <a href="https://github.com/phuchb2004" target="_blank" rel="noopener noreferrer">
-                                <FaGithub/>
-                            </a>
-                            <a href="https://www.facebook.com/phuc.hoangbao.908/" target="_blank" rel="noopener noreferrer">
-                                <FaFacebook/>
-                            </a>
-                            <a href="https://www.instagram.com/hoaqbp_/" target="_blank" rel="noopener noreferrer">
-                                <FaInstagram/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/ph%C3%BAc-ho%C3%A0ng-b%E1%BA%A3o-aba958399/" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="about-right">
-                    <h1 className="animate-fade-right">{t('about.right.title')}</h1>
-
-                    <p className="animate-fade-right delay-1">
-                        {t('about.right.description')}
-                    </p>
-
-                    <div className="tech-stack animate-fade-right delay-2">
-                        <h3>{t('about.right.tech.head')}</h3>
-                        <div className="skills-grid">
-                            <div className="skill-item">
-                                <FaReact/> {t('about.right.tech.react')}
-                            </div>
-                            <div className="skill-item">
-                                <SiNextdotjs/> {t('about.right.tech.next')}
-                            </div>
-                            <div className="skill-item">
-                                <SiVuedotjs/> {t('about.right.tech.vue')}
-                            </div>
-                            <div className="skill-item">
-                                <FaNodeJs/> {t('about.right.tech.node')}
-                            </div>
-                            <div className="skill-item">
-                                <SiLaravel/> {t('about.right.tech.laravel')}
-                            </div>
-                            <div className="skill-item">
-                                <SiDotnet/> {t('about.right.tech.dotnet')}
-                            </div>
-                            <div className="skill-item">
-                                <FaDatabase/> {t('about.right.tech.mysql')}
+                            <div className="social-links">
+                                <a href="https://github.com/phuchb2004" target="_blank" rel="noopener noreferrer">
+                                    <FaGithub/>
+                                </a>
+                                <a href="https://www.facebook.com/phuc.hoangbao.908/" target="_blank" rel="noopener noreferrer">
+                                    <FaFacebook/>
+                                </a>
+                                <a href="https://www.instagram.com/hoaqbp_/" target="_blank" rel="noopener noreferrer">
+                                    <FaInstagram/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ph%C3%BAc-ho%C3%A0ng-b%E1%BA%A3o-aba958399/" target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedin/>
+                                </a>
                             </div>
                         </div>
                     </div>
+
+                    <div className="about-right">
+                        <h1>{t('about.general.title')}</h1>
+
+                        <p>
+                            {t('about.general.description')}
+                        </p>
+
+                        <div className="tech-stack">
+                            <h3>{t('about.general.tech.head')}</h3>
+                            <div className="skills-grid">
+                                <div className="skill-item">
+                                    <FaReact/> {t('about.general.tech.react')}
+                                </div>
+                                <div className="skill-item">
+                                    <SiNextdotjs/> {t('about.general.tech.next')}
+                                </div>
+                                <div className="skill-item">
+                                    <SiVuedotjs/> {t('about.general.tech.vue')}
+                                </div>
+                                <div className="skill-item">
+                                    <FaNodeJs/> {t('about.general.tech.node')}
+                                </div>
+                                <div className="skill-item">
+                                    <SiLaravel/> {t('about.general.tech.laravel')}
+                                </div>
+                                <div className="skill-item">
+                                    <SiDotnet/> {t('about.general.tech.dotnet')}
+                                </div>
+                                <div className="skill-item">
+                                    <FaDatabase/> {t('about.general.tech.mysql')}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </RevealOnScroll>
 
             {/* Sport */}
-            <div className="about-sport">
+            <RevealOnScroll direction="left">
+                <div className="about-sport">
+                    <div className="sport-title">
+                        <h3>{t('about.sport.title')}</h3>
+                        <p>{t('about.sport.description')}</p>
+                    </div>
+                    
+                    <div className="sport-media">
+                        <div className="sport-img">
+                            <img src={bu2fc} alt="BU2FC" />
+                            <img src={start} alt="lineup" />
+                            <img src={withFamily} alt="family" />
+                            <img src={pth} alt="brothers" />
+                        </div>
 
-            </div>
+                        <div className="sport-video">
+                            <video src={goal} controls></video>
+                        </div>
+                    </div>
+                </div>
+            </RevealOnScroll>
         </div>
     )
 }

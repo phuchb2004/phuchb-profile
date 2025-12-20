@@ -35,7 +35,7 @@
         }
     },
     "about": {
-        "right": {
+        "general": {
             "title": "About Me",
             "description": "I'm a passionate software developer with hands-on experience in React, Nextjs, Vuejs, Nodejs, Laravel, .NET, and database technologies.",
             "tech": {
@@ -48,6 +48,10 @@
                 "dotnet": ".NET",
                 "mysql": "MySQL"
             }
+        },
+        "sport": {
+            "title": "Sports Passion",
+            "description": "Memorable moments and outstanding achievements on the pitch"
         }
     },
     "modal": {

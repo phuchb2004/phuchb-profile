@@ -35,7 +35,7 @@
         }
     },
     "about": {
-        "right": {
+        "general": {
             "title": "Giới thiệu bản thân",
             "description": "Tôi là một lập trình viên có niềm đam mê với công nghệ, sở hữu kinh nghiệm làm việc với React, Nextjs, Vuejs, Nodejs, Laravel, .NET và các công nghệ cơ sở dữ liệu.",
             "tech": {
@@ -48,6 +48,10 @@
                 "dotnet": ".NET",
                 "mysql": "MySQL"
             }
+        },
+        "sport": {
+            "title": "Đam mê thể thao",
+            "description": "Những khoảnh khắc và thành tích đáng nhớ trên sân cỏ"
         }
     },
     "modal": {
