@@ -46,7 +46,7 @@
                 "node": "NodeJS",
                 "laravel": "Laravel",
                 "dotnet": ".NET",
-                "mysql": "MySQL"
+                "mysql": "MongoDB"
             }
         },
         "sport": {
