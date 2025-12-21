@@ -54,6 +54,15 @@
             "description": "Những khoảnh khắc và thành tích đáng nhớ trên sân cỏ"
         }
     },
+    "experience": {
+        "title": "Kinh nghiệm làm việc",
+        "loading": "Đang tải...",
+        "label": {
+            "role": "Vai trò:",
+            "description": "Mô tả:",
+            "tech": "Công nghệ:"
+        }
+    },
     "modal": {
         "contactEmail": {
             "title": "Liên hệ",

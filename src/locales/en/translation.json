@@ -54,6 +54,15 @@
             "description": "Memorable moments and outstanding achievements on the pitch"
         }
     },
+    "experience": {
+        "title": "Work Experience",
+        "loading": "Loading...",
+        "label": {
+            "role": "Role:",
+            "description": "Description:",
+            "tech": "Technologies:"
+        }
+    },
     "modal": {
         "contactEmail": {
             "title": "Contact Me",
