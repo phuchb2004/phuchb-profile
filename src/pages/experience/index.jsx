@@ -36,7 +36,7 @@ export default function Experience() {
 
             <div className="timeline-wrapper">
                 {exp.map((company) => (
-                    <RevealOnScroll>
+                    <RevealOnScroll direction="right" key={ company.companyId }>
                         <div className="company-block">
                             <div className="company-header">
                                 <div className="company-icon">
