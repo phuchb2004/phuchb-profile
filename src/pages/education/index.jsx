@@ -28,7 +28,7 @@ export default function Education() {
         fetchCertificate();
     }, [])
 
-    if (loading) return <div className="loading-state">{t('experience.loading')}</div>;
+    if (loading) return <div className="loading-state"><div className="loader"></div><p>{t('experience.loading')}</p></div>;
     if (error) return <div className="error-state">{error}</div>;
 
     return (
