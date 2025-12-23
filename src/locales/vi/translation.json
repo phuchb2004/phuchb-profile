@@ -87,7 +87,8 @@
         "project": "Đồ án: Shop quần áo"
     },
     "technology": {
-        "title": "Technologies I used"
+        "title": "Công Nghệ & Công Cụ",
+        "description": "Hệ sinh thái công nghệ tôi đã lựa chọn để xây dựng website này, đảm bảo hiệu suất cao, khả năng mở rộng linh hoạt và trải nghiệm người dùng mượt mà."
     },
     "donation": {
         "title": "Donate me"

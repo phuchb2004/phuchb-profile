@@ -87,7 +87,8 @@
         "project": "Capstone Project: Clothing Store"
     },
     "technology": {
-        "title": "Technologies I used"
+        "title": "My Tech Stack",
+        "description": "The modern ecosystem of tools and frameworks I utilized to build this portfolio, ensuring high performance, scalability, and a seamless user experience."
     },
     "donation": {
         "title": "Donate me"
