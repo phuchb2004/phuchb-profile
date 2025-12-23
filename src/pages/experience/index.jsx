@@ -4,6 +4,7 @@ import {  useTranslation } from 'react-i18next';
 import RevealOnScroll from '../../components/reveal-on-scroll';
 import { FaBriefcase, FaCalendarAlt } from 'react-icons/fa';
 import baseApi from '../../base-api/baseApi';
+import Loading from '../../components/loading';
 
 export default function Experience() {
     const { t, i18n } = useTranslation();
@@ -27,7 +28,7 @@ export default function Experience() {
         fetchExp();
     }, []);
 
-    if (loading) return <div className="loading-state"><div className="loader"></div><p>{t('experience.loading')}</p></div>;
+    if (loading) return <Loading/>;
     if (error) return <div className="error-state">{error}</div>;
 
     return (

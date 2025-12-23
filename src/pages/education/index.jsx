@@ -5,6 +5,7 @@ import hsg12 from '../../assets/hsg-12.jpg';
 import RevealOnScroll from '../../components/reveal-on-scroll';
 import { useTranslation } from 'react-i18next';
 import baseApi from '../../base-api/baseApi';
+import Loading from '../../components/loading';
 
 export default function Education() {
     const { t, i18n } = useTranslation();
@@ -28,7 +29,7 @@ export default function Education() {
         fetchCertificate();
     }, [])
 
-    if (loading) return <div className="loading-state"><div className="loader"></div><p>{t('experience.loading')}</p></div>;
+    if (loading) return <Loading/>;
     if (error) return <div className="error-state">{error}</div>;
 
     return (

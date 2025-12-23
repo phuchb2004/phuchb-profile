@@ -5,6 +5,7 @@ import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiMongodb, SiAwsamplify, SiRender } from 'react-icons/si';
 import RevealOnScroll from '../../components/reveal-on-scroll';
 import baseApi from '../../base-api/baseApi';
+import Loading from '../../components/loading';
 
 export default function Technology() {
     const { t } = useTranslation();
@@ -39,7 +40,7 @@ export default function Technology() {
         return <FaCode color="#888" />;
     };
 
-    if (loading) return <div className="loading-state"><div className="loader"></div><p>{t('experience.loading')}</p></div>;
+    if (loading) return <Loading/>;
     if (error) return <div className="error-state">{error}</div>;
 
     return (
