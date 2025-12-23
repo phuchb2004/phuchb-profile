@@ -1,3 +1,5 @@
+@import '/src/styles/_variable.scss';
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -66,14 +68,14 @@
 
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
-    border-color: #8594e4;
+    border-color: $curious-blue;
     box-shadow: 0 0 0 3px rgba(133, 148, 228, 0.2);
 }
 
 .submit-btn {
     width: 100%;
     padding: 12px;
-    background-color: #8594e4;
+    background-color: $curious-blue;
     color: #FFFFFF;
     border: none;
     border-radius: 6px;
@@ -83,7 +85,7 @@
 }
 
 .submit-btn:hover {
-    background-color: #6c7ac2;
+    background-color: $endeavour;
     transform: translateY(-1px);
 }
 

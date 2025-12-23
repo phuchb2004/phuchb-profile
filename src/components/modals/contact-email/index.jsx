@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import baseApi from "../../../base-api/baseApi";
 import { FaTimes } from "react-icons/fa";
-import './style.css';
+import './style.scss';
 import { useTranslation } from "react-i18next";
 
 const ContactEmail = ({ isOpen, onClose }) => {

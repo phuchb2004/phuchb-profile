@@ -1,3 +1,5 @@
+@import '/src/styles/_variable.scss';
+
 .about-container {
     background-color: #FFFFFF;
     display: flex;
@@ -46,7 +48,7 @@
 .about-right h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: #000000;
+    color: $endeavour;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -78,13 +80,13 @@
 }
 
 .social-links a:hover {
-    color: #8594e4;
+    color: $curious-blue;
 }
 
 .tech-stack h3 {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #8594e4;
+    color: $endeavour;
     font-weight: 700;
 }
 
@@ -121,7 +123,7 @@
 .sport-title h3 {
     font-size: 2rem;
     font-weight: 800;
-    color: #000000;
+    color: $endeavour;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;

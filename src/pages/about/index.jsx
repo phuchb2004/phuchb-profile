@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';

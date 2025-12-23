@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import { HomeOutlined } from '@ant-design/icons';
 import React, { useState, useEffect } from 'react';
 import hsg12 from '../../assets/hsg-12.jpg';

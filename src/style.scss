@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import '/src/styles/_variable.scss';
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: $nunito;
 }

@@ -1,3 +1,5 @@
+@import '/src/styles/variable';
+
 .tech-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -13,7 +15,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #000000;
+    color: $endeavour;
 }
 
 .tech-desc {
@@ -32,7 +34,7 @@
 }
 
 .tech-item {
-    background-color: #eaf6f6;
+    background-color: $aqua-blue;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;

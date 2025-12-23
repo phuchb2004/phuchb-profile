@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined, TwitchOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 

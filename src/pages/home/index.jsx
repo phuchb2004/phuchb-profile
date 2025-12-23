@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import './style.scss';
 import phucImg from '../../assets/sen.png';
 import { useTranslation, Trans } from 'react-i18next';
 import ContactEmail from '../../components/modals/contact-email';

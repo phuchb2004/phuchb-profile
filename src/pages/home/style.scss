@@ -1,5 +1,7 @@
+@import '/src/styles/variable';
+
 .home-container {
-    background-color: white;
+    background-color: $white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +17,7 @@
 .home-left h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: #000000;
+    color: $endeavour;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -53,7 +55,7 @@
 }
 
 .button-cv {
-    background-color: #8594e4;
+    background-color: $curious-blue;
     color: #FFFFFF;
     border: none;
     padding: 12px 24px;

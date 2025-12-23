@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style.css';
+import './style.scss';
 import { useTranslation } from 'react-i18next';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiMongodb, SiAwsamplify, SiRender } from 'react-icons/si';

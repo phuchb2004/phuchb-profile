@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import React, { useState, useEffect } from 'react';
 import {  useTranslation } from 'react-i18next';
 import RevealOnScroll from '../../components/reveal-on-scroll';
