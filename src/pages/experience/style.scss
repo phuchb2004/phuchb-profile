@@ -7,13 +7,23 @@
     color: #000000;
 }
 
-.experience-container h2 {
+.exp-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
     color: $endeavour;
     position: relative;
-    font-weight: 700;   
+    font-weight: 700;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: $endeavour;
+        margin: 15px auto 0;
+        border-radius: 2px;
+    }
 }
 
 .error-state {
@@ -126,7 +136,7 @@
         padding: 40px 15px;
     }
 
-    .experience-container h2 {
+    .exp-title {
         font-size: 1.8rem;
         margin-bottom: 40px;
     }

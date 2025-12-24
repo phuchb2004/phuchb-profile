@@ -14,8 +14,18 @@
 .tech-header h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: $endeavour;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: $endeavour;
+        margin: 15px auto 0;
+        border-radius: 2px;
+    }
 }
 
 .tech-desc {

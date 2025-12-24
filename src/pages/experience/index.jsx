@@ -34,7 +34,7 @@ export default function Experience() {
     return (
         <div className="experience-container">
             <RevealOnScroll direction="left">
-                <h2>{t('experience.title')}</h2>
+                <h2 className="exp-title">{t('experience.title')}</h2>
             </RevealOnScroll>
 
             <div className="timeline-wrapper">
