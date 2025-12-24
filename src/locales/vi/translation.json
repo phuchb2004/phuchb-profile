@@ -81,7 +81,9 @@
         },
         "achievement": {
             "label": "Thành tích nổi bật:",
-            "description": "Đạt danh hiệu Học sinh Giỏi năm lớp 12."
+            "description1": "Đạt danh hiệu Học sinh Giỏi năm lớp 12.",
+            "description2": "Vô địch giải bóng đá trường",
+            "description3": "Vô địch giải bóng đá đồng hương"
         },
         "major": "Chuyên ngành: Công nghệ thông tin",
         "rating": "Tốt nghiệp loại Khá",

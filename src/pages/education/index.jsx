@@ -1,11 +1,20 @@
 import './style.scss';
 import { HomeOutlined } from '@ant-design/icons';
+import { FaUserGraduate, FaFutbol } from 'react-icons/fa';
 import React, { useState, useEffect } from 'react';
-import hsg12 from '../../assets/hsg-12.jpg';
 import RevealOnScroll from '../../components/reveal-on-scroll';
 import { useTranslation } from 'react-i18next';
 import baseApi from '../../base-api/baseApi';
 import Loading from '../../components/loading';
+/* Images */
+import hsg12 from '../../assets/vcvb/hsg-12.jpg';
+import a209 from '../../assets/vcvb/a209.jpg';
+import a1k62 from '../../assets/vcvb/a1k62.jpg';
+import a1fc from '../../assets/vcvb/a1fc.jpg';
+import xuho from '../../assets/xuho/lop.jpg';
+import aexuho from '../../assets/xuho/ae.jpg';
+import aexuho2 from '../../assets/xuho/ae2.jpg';
+import gac from '../../assets/xuho/gac.jpg';
 
 export default function Education() {
     const { t, i18n } = useTranslation();
@@ -47,10 +56,25 @@ export default function Education() {
                             <div className="achievement-block">
                                 <div className="achievement-info">
                                     <h4>{t('education.achievement.label')}</h4>
-                                    <p>{t('education.achievement.description')}</p>
+
+                                    <p>
+                                        <FaUserGraduate className="edu-icon"/>
+                                        <span>{t('education.achievement.description1')}</span>
+                                    </p>
+                                    <p>
+                                        <FaFutbol className="edu-icon"/>
+                                        <span>{t('education.achievement.description2')}</span>
+                                    </p>
+                                    <p>
+                                        <FaFutbol className="edu-icon"/>
+                                        <span>{t('education.achievement.description3')}</span>
+                                    </p>
                                 </div>
 
                                 <div className="achievement-img">
+                                    <img src={a1k62} alt="Tập thể A1K62VCVB" />
+                                    <img src={a209} alt="anh em A209" />
+                                    <img src={a1fc} alt="Đội bóng A1K62" />
                                     <img src={hsg12} alt="Giấy khen HSG lớp 12" />
                                 </div>
                             </div>
@@ -64,10 +88,12 @@ export default function Education() {
                                 <HomeOutlined /> {t('education.schoolName.colleague')}
                             </h3>
                             <p className="edu-major">{t('education.major')}</p>
-                            <ul className="edu-desc">
-                                <li>{t('education.rating')}</li>
-                                <li>{t('education.project')}</li>
-                            </ul>
+                            <div className="university-image-container">
+                                <img src={xuho} alt="Ảnh tập thể lớp" />
+                                <img src={aexuho} alt="Anh em" />
+                                <img src={aexuho2} alt="Anh em 2" />
+                                <img src={gac} alt="Đi gác" />
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,48 +1,61 @@
-@import '/src/styles/_variable.scss';
+@use '/src/styles/variable' as *;
 
 .education-container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 .edu-title, .certificate-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 800;
     color: $endeavour;
     margin-bottom: 40px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: $endeavour;
+        margin: 15px auto 0;
+        border-radius: 2px;
+    }
 }
 
 .certificate-title {
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .formal-education {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
 }
 
 .edu-card {
     background-color: $aqua-blue;
     border: 1px solid $curious-blue;
-    border-radius: 16px;
+    border-radius: 24px;
     padding: 30px;
-    height: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    transition: transform 0.3s ease;
+    box-shadow: 0.3s ease;
+    position: relative;
+    overflow: hidden;
 
-.edu-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 20px rgba($endeavour, 0.15);
+        border-color: $curious-blue;
+    }
 }
 
 .edu-year {
     display: inline-block;
-    background-color: #e2e8f0;
-    color: #000000;
+    background-color: rgba($endeavour, 0.1);
+    color: $dark;
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -54,130 +67,175 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: $endeavour;
     margin-bottom: 15px;
     font-weight: 700;
     line-height: 1.3;
-}
 
-.school-header .anticon {
-    font-size: 1.8rem;
-    flex-shrink: 0;
+    .anticon {
+        font-size: 2rem;
+    }
 }
 
 .highschool .school-header .anticon {
-    color:#10b981;
+    color:$emerald;
 }
 
 .colleague .school-header .anticon {
-    color: #3b82f6;
+    color: $curious-blue;
 }
 
 .edu-major {
     font-size: 1.1rem;
-    color: #000000;
+    color: $slate;
     font-weight: 600;
     line-height: 1.6;
-}
-
-.edu-desc {
-    list-style-type: none;
-    padding-left: 0;
-    color: #000000;
-    font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .achievement-block {
     margin-top: 20px;
-    background-color: #f1f5f9;
-    border: 1px solid #cbd5e1;
-    border-radius: 12px;
+    background-color: $off-white;
+    border: 1px solid $light-blue-grey;
+    border-radius: 16px;
     padding: 15px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
+
+    h4 {
+        font-size: 1.1rem;
+        color: $endeavour;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: $slate;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+.achievement-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
 }
 
 .achievement-info {
     flex: 1;
+
+    h4 {
+        font-size: 1.15rem;
+        color: $endeavour;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    p {
+        display: flex;
+        align-items: flex-start; 
+        gap: 12px;
+        font-size: 1rem;
+        color: $slate;
+        line-height: 1.6;
+        margin: 0;
+
+        .edu-icon {
+            font-size: 1.1rem;
+            color: $curious-blue;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+    }
 }
 
-.achievement-info p {
-    font-size: 0.95rem;
-    color: #000000;
-    margin: 0;
-}
+.university-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 
-.achievement-img {
-    width: 120px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-}
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
 
-.achievement-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.achievement-img:hover img {
-    transform: scale(1.1);
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
 }
 
 .certificate {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
 .certificate-item {
-    background: $aqua-blue;
-    padding: 20px;
-    border-radius: 12px;
+    background: $white;
+    padding: 25px;
+    border-radius: 16px;
     border: 1px solid $curious-blue;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     cursor: pointer;
     text-decoration: none;
     color: inherit;
-}
 
-.certificate-item:hover {
-    border-color: $endeavour;
-}
+    &:hover {
+        border-color: $endeavour;
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba($endeavour, 0.15);
 
-.certificate-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 4px;
-    background-color: #3b82f6;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+        &::before {
+            opacity: 1;
+            height: 100%;
+        }
+    }
 
-.certificate-item:hover::before {
-    opacity: 1;
-}
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0%;
+        width: 4px;
+        background-color: $endeavour;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
 
-.certificate-item h4 {
-    font-size: 1.1rem;
-    color: $endeavour;
-    margin-bottom: 8px;
-}
+    h4 {
+        font-size: 1.2rem;
+        color: $endeavour;
+        margin-bottom: 12px;
+        font-weight: 700;
+    }
 
-.certificate-item p {
-    font-size: 0.9rem;
-    color: #000000;
+    p {
+        font-size: 0.95rem;
+        color: $dark;
+        line-height: 1.5;
+        flex-grow: 1;
+    }
 }
 
 .error-state {
@@ -187,16 +245,32 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    color: #000000;
+    color: $dark;
 }
 
 @media (max-width: 768px) {
     .education-container {
-        padding: 40px 15px;
+        padding: 50px 15px;
     }
 
     .edu-title, .certificate-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        margin-bottom: 35px;
+    }
+
+    .edu-card {
+        padding: 25px;
+    }
+
+    .school-header {
+        font-size: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        .anticon {
+            font-size: 1.8rem;
+        }
     }
 
     .formal-education {
@@ -205,19 +279,35 @@
     }
 
     .achievement-info p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .achievement-block {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .achievement-img {
         width: 100%;
         margin-top: 10px;
+        grid-template-columns: 1fr;
+
+        img {
+            max-height: 220px;
+        }
     }
 
-    .edu-desc {
-        font-weight: 500;
+    .university-image-container {
+        width: 100%;
+        margin-top: 10px;
+        grid-template-columns: 1fr;
+
+        img {
+            max-height: 220px;
+        }
+    }
+
+    .certificate {
+        grid-template-columns: 1fr;
     }
 }

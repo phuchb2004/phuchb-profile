@@ -81,7 +81,9 @@
         },
         "achievement": {
             "label": "Outstanding Achievement:",
-            "description": "Achieved Excellent Student title in Grade 12."
+            "description1": "Achieved Excellent Student title in Grade 12.",
+            "description2": "Champion of the School Football Tournament",
+            "description3": "Champion of the Hometown Association Football Tournament"
         },
         "major": "Major: Information Technology",
         "rating": "Degree Classification: Good",
