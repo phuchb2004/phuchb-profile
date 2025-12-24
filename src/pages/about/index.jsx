@@ -84,18 +84,6 @@ export default function About() {
 
             <div className="separate-line"></div>
 
-            {/* Strengths */}
-            <RevealOnScroll direction="right">
-                <div className="about-strengths">
-                    <div className="strengths-title">
-                        <h3>The manh cua toi</h3>
-                        <p>the manh...</p>
-                    </div>
-                </div>
-            </RevealOnScroll>
-
-            <div className="separate-line"></div>
-
             {/* Sport */}
             <RevealOnScroll direction="left">
                 <div className="about-sport">
