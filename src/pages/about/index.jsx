@@ -5,7 +5,7 @@ import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaFacebook, FaInstagram, FaLin
 import { SiNextdotjs, SiVuedotjs, SiLaravel, SiDotnet } from 'react-icons/si';
 import RevealOnScroll from '../../components/reveal-on-scroll';
 /* images */
-import phucImg from '../../assets/sen.png';
+import phucImg from '../../assets/phuc.jpg';
 import bu2fc from '../../assets/sport/bu2fc.jpg';
 import withFamily from '../../assets/sport/with-family.jpg';
 import top12Vcvb from '../../assets/sport/top1-2-vcvb.jpg';

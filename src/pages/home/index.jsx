@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.scss';
-import phucImg from '../../assets/sen.png';
+import phucImg from '../../assets/phuc.jpg';
 import { useTranslation, Trans } from 'react-i18next';
 import ContactEmail from '../../components/modals/contact-email';
 
