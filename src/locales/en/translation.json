@@ -31,7 +31,7 @@
     "home": {
         "left": {
             "greeting": "Hello, I'm Bao Phuc",
-            "description": "A Full-stack Developer passionate about creating modern interfaces with <0>React, Next.js, Vue.js</0> and building robust systems using <0>Node.js, Express, Nest.js</0>",
+            "description": "A Full-stack Developer passionate about creating modern interfaces with <0>React, Next.js</0> and building robust systems using <0>Node.js, Laravel, .NET</0>",
             "contactButton": "Contact Me",
             "downloadCVButton": "Download CV"
         }
@@ -39,12 +39,11 @@
     "about": {
         "general": {
             "title": "About Me",
-            "description": "I'm a passionate software developer with hands-on experience in React, Nextjs, Vuejs, Nodejs, Laravel, .NET, and database technologies.",
+            "description": "I'm a passionate software developer with hands-on experience in Reactjs, Nextjs, Nodejs, Laravel, .NET, and database technologies.",
             "tech": {
                 "head": "Technologies",
                 "react": "ReactJS",
                 "next": "NextJS",
-                "vue": "VueJS",
                 "node": "NodeJS",
                 "laravel": "Laravel",
                 "dotnet": ".NET",

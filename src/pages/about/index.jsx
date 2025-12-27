@@ -2,7 +2,7 @@ import './style.scss';
 import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { FaReact, FaNodeJs, FaDatabase, FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { SiNextdotjs, SiVuedotjs, SiLaravel, SiDotnet } from 'react-icons/si';
+import { SiNextdotjs, SiLaravel, SiDotnet } from 'react-icons/si';
 import RevealOnScroll from '../../components/reveal-on-scroll';
 /* images */
 import phucImg from '../../assets/phuc.jpg';
@@ -60,9 +60,6 @@ export default function About() {
                                 </div>
                                 <div className="skill-item">
                                     <SiNextdotjs/> {t('about.general.tech.next')}
-                                </div>
-                                <div className="skill-item">
-                                    <SiVuedotjs/> {t('about.general.tech.vue')}
                                 </div>
                                 <div className="skill-item">
                                     <FaNodeJs/> {t('about.general.tech.node')}

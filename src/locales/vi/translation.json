@@ -31,7 +31,7 @@
     "home": {
         "left": {
             "greeting": "Xin chào, tôi là Bảo Phúc",
-            "description": "Một Full-stack Developer đam mê tạo ra những giao diện hiện đại bằng <0>React, Next.js, Vue.js</0> và xây dựng hệ thống ổn định với <0>Node.js, Express, Nest.js</0>",
+            "description": "Một Full-stack Developer đam mê tạo ra những giao diện hiện đại bằng <0>React, Next.js</0> và xây dựng hệ thống ổn định với <0>Node.js, Laravel, .NET</0>",
             "contactButton": "Liên hệ tôi",
             "downloadCVButton": "Tải xuống CV"
         }
@@ -39,12 +39,11 @@
     "about": {
         "general": {
             "title": "Giới thiệu bản thân",
-            "description": "Tôi là một lập trình viên có niềm đam mê với công nghệ, sở hữu kinh nghiệm làm việc với React, Nextjs, Vuejs, Nodejs, Laravel, .NET và các công nghệ cơ sở dữ liệu.",
+            "description": "Tôi là một lập trình viên có niềm đam mê với công nghệ, sở hữu kinh nghiệm làm việc với React, Nextjs, Nodejs, Laravel, .NET và các công nghệ cơ sở dữ liệu.",
             "tech": {
                 "head": "Các công nghệ sử dụng",
                 "react": "ReactJS",
                 "next": "NextJS",
-                "vue": "VueJS",
                 "node": "NodeJS",
                 "laravel": "Laravel",
                 "dotnet": ".NET",
