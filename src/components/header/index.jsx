@@ -25,7 +25,7 @@ export default function Header() {
     return (
         <div className="header-container">
             <div className="header-title">
-                <NavLink to="/home">
+                <NavLink to="/">
                     <h1 className="desktop-title">{t('header.title')}</h1>
                     <img src={logo} alt="Logo" className="mobile-logo" />
                 </NavLink>
