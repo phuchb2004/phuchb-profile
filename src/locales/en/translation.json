@@ -58,7 +58,7 @@
     },
     "experience": {
         "title": "Work Experience",
-        "loading": "Loading...",
+        "loading": "Connecting to the server...",
         "label": {
             "role": "Role:",
             "description": "Description:",

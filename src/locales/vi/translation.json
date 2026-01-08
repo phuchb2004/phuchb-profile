@@ -58,7 +58,7 @@
     },
     "experience": {
         "title": "Kinh nghiệm làm việc",
-        "loading": "Đang tải...",
+        "loading": "Đang kết nối tới server...",
         "label": {
             "role": "Vai trò:",
             "description": "Mô tả:",
